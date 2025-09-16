@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+select = ["E", "F", "I", "B"]
+
+[tool.sqlfluff]
+dialect = "bigquery"
+templater = "jinja"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
